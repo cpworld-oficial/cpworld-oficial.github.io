@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CP WORLD</title>
+    <style>
+        body { 
+            background-color: #1a1a1a; 
+            color: #cccccc; 
+            font-family: "Times New Roman", Times, serif; 
+            margin: 20px;
+            line-height: 1.2;
+        }
+        h1 { color: #ffffff; text-decoration: underline; }
+        h2 { color: #ffffff; background-color: #333; padding: 2px; }
+        
+        a { color: #00eaff; } 
+        a:visited { color: #00aacc; }
+        
+        nav { margin-bottom: 20px; border: 1px solid #444; padding: 10px; }
+        .page { display: none; }
+        .active { display: block; }
+        
+        hr { border: 0; border-top: 2px solid #444; }
+        ul { list-style-type: disc; }
+        li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>CP WORLD</h1>
+        <p><i></i></p>
+    </center>
+
+    <nav>
+
+        <b>MENU:</b> 
+        [<a href="#" onclick="nav('home')">Inicio</a>] 
+        [<a href="#" onclick="nav('juegos')">Juegos</a>] 
+        [<a href="#" onclick="nav('soft')">Software</a>]  
+        [<a href="#" onclick="nav('multi')">Multimedia</a>]
+        [<a href="#" onclick="nav('cyber')">Cyber/OSINT</a>] 
+        [<a href="https://t.me/lostineo/1" target="_blank">Telegram</a>]
+
+<input type="text" id="buscador" onkeyup="filtrarTodo()" placeholder="Buscar" 
+style="width: 80%; padding: 8px; margin-top: 10px; background: #222; color: #ffffff; border: 1px solid #444;">
+
+    </nav>
+
+    <hr>
+
+    <div id="home" class="page active">
+        </ul>
+        <p></p>
+    </div>
+
+    <div id="juegos" class="page">
+        <h2>JUEGOS PC</h2>
+        <ul>
+            <h3>Juegos Linux</h3>
+            <li><a href="https://freelinuxpcgames.com/">Free Linux PC Games</a> - Juegos nativos de Linux (PIRATA).</li>
+            <li><a href="https://portablelinuxgames.org/">Portable Linux Games</a> - Juegos portables para Linux.</li>
+            <li><a href="https://juegos.locosporlinux.com/">Juegos Locos por Linux</a> - Juegos nativos de Linux Online.</li>
+            <h3>Juegos Windows</h3>
+            <li><a href="https://gog-games.to/">GOG Games</a> - Juegos de GOG.</li>
+            <li><a href="https://steamrip.com/">SteamRIP</a> - Juegos portables.</li>
+            <li><a href="https://steamunlocked.org/">SteamUnlocked</a> - Juegos portables.</li>
+            <li><a href="https://pivigames.blog/">PiviGames</a> - Juegos en español.</li>
+            <li><a href="https://dodi-repacks.site/">DODI Repacks</a> - Juegos supercomprimidos.</li>
+            <li><a href="https://fitgirl-repacks.site/">FitGirl Repacks</a> - Juegos supercomprimidos (instalación lenta).</li>
+            <li><a href="https://optijuegos.net/">OptiJuegos</a> - Juegos optimizados.</li>
+            <h3>Emulación</h3>
+            <li><a href="https://romsfun.com/">RomsFun</a> - Roms.</li>
+            <h2>Minecraft</h2>
+            <h3>Java</h3>
+            <li><a href="https://elyprismlauncher.github.io/">ElyPride Launcher</a> - Launcher no oficial de Minecraft Java.</li>
+            <li><a href="https://tlauncher.org/">TLauncher</a> - Launcher no oficial de Minecraft Java.</li>
+            <h3>Bedrock</h3>
+            <li><a href="https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher">CianovaLauncher-mcpelauncher</a> - Launcher no oficial de Minecraft Bedrock.</li>
+            <li><a href="https://mcpelife.com/">MCPeLife</a> - APKS de Minecraft Bedrock.</li>
+
+        </ul>
+    </div>
+
+    <div id="soft" class="page">
+        <h2>SOFTWARE</h2>
+        <h3>Sistemas Operativos</h3>
+        <ul>
+            <li><a href="https://www.debian.org/">Debian</a> - Distribución estable.</li>
+            <li><a href="https://nixos.org">NixOS</a> - Distribución inmutable.</li>
+            <li><a href="https://archlinux.org">Arch Linux</a> - Rolling release.</li>
+            <li><a href="https://massgrave.dev/">Massgrave</a> - Windows/Office.</li>
+        </ul>
+        <h3>Utilidades</h3>
+        <ul>
+            <li><a href="https://ventoy.net/">Ventoy</a> - Multiboot USB simple.</li>
+            <li><a href="https://rufus.ie/">Rufus</a> - Crear USBs de arranque (solo Windows).</li>
+            <li><a href="https://www.balena.io/etcher/">Etcher</a> - Crear USBs de arranque (multiplataforma).</li>
+        </ul>
+        <h3>Discord</h3>
+        <ul>
+            <li><a href="https://equicord.org/">Equicord</a> - Discord plugins / addons.</li>
+        </ul>
+
+    </div>
+
+    <div id="cyber" class="page">
+        <h2>CYBER/OSINT</h2>
+        <ul>
+            <li><a href="https://osintframework.com/">OSINT Framework</a> - Árbol de herramientas de búsqueda.</li>
+            <li><a href="https://www.shodan.io/">Shodan</a> - Motor de búsqueda de dispositivos.</li>
+            <li><a href="https://haveibeenpwned.com/">Pwned?</a> - Chequeo de filtraciones de emails.</li>
+            <li><a href="https://github.com/htr-tech/nexphisher">Nexphisher</a> - Herramienta de auditoría social.</li>
+            <li><a href="https://www.kali.org/">Kali Linux</a> - La distro estándar de Pentesting.</li>
+        </ul>
+    </div>
+
+    <div id="multi" class="page">
+        <h2>MULTIMEDIA</h2>
+        <ul>
+            <li><a href="https://repelisplus.lat/">RepelisPlus</a> - Películas y series en Latino.</li>
+            <li><a href="https://dominioshdfull.com/">HDFull</a> - Películas y series en castellano.</li>
+            <li><a href="https://latanime.org/">LatAnime</a> - Animes en latino y castellano.</li>
+            <li><a href="https://animev1.com/">AnimeV1</a> - Animes en español.</li>
+            <li><a href="https://aniwatchtv.to/home">AniWatchTV</a> - Animes en Ingles.</li>
+        </ul>
+        <h3>Contenido Adulto</h3>
+        <ul>
+            <li><a href="https://www.pornhub.com/">PornHub</a></li>
+            <li><a href="https://rule34video.com/">Rule34Video</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <center>
+        <p>CP WORLD © 2026 - By PapaCalvo</p>
+    </center>
+<script>
+        // Función para navegar entre pestañas
+        function nav(id) {
+            var p = document.getElementsByClassName('page');
+            
+            // 1. Limpiamos clases y estilos de todas las páginas
+            for(var i=0; i<p.length; i++) {
+                p[i].classList.remove('active');
+                p[i].style.display = ""; // Resetea el display por si venimos de una búsqueda
+                
+                // 2. Restauramos la visibilidad de todos los elementos internos
+                let elementos = p[i].querySelectorAll('li, h2, h3, p');
+                for(let el of elementos) el.style.display = "";
+            }
+
+            // 3. Activamos solo la pestaña seleccionada
+            document.getElementById(id).classList.add('active');
+            window.scrollTo(0,0);
+        }
+
+        // Función del buscador inteligente
+        function filtrarTodo() {
+            let input = document.getElementById('buscador').value.toLowerCase();
+            let secciones = document.getElementsByClassName('page');
+
+            // Si el buscador está vacío, volvemos a la pestaña de Inicio
+            if (input.length === 0) {
+                nav('home');
+                return;
+            }
+
+            // Si hay texto, filtramos en todo el documento
+            for (let s of secciones) {
+                let hayCoincidenciaEnSeccion = false;
+                // Seleccionamos elementos de lista, títulos y párrafos
+                let elementos = s.querySelectorAll('li, h2, h3, p');
+
+                for (let el of elementos) {
+                    let texto = el.textContent.toLowerCase();
+                    
+                    if (texto.includes(input)) {
+                        el.style.display = ""; // Mostrar si coincide
+                        hayCoincidenciaEnSeccion = true;
+                    } else {
+                        el.style.display = "none"; // Ocultar si no coincide
+                    }
+                }
+
+                // Si la sección tiene resultados, la mostramos; si no, la ocultamos
+                if (hayCoincidenciaEnSeccion) {
+                    s.style.display = "block";
+                    s.classList.add('active');
+                } else {
+                    s.style.display = "none";
+                    s.classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
